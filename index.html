@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Link Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body">
+    <div class="container flex">
+    <div class="card  w-3/4 lg:w-1/2 justify-center px-8 mx-auto py-10 bg-white my-20 rounded-md shadow-xl">
+    <header>
+        <h1 class="text-xl font-bold">Whatsapp Link Generator</h1>
+    </header>
+    <form class="flex flex-col my-5" action="#">
+        <label class="my-2" for="">Masukan Nomor</label>
+        <input id="number" class="border h-8  w-full " type="number" name="" id="number">
+        <p id="notifNumber"class="mt-0 mb-2 text-white disable-select relative" >.</p>
+        <label class="my-2" for="">Masukan Pesan</label>
+        <textarea id="text" class="border h-44  w-full " type="text" name="" id="text"> </textarea>
+        <p id="notifText"class="mt-0 mb-2 text-white disable-select relative">.</p>  
+        <button type="button" class="border h-8 bg-blue-700 text-white rounded-md" onclick="generate()">Generate !</button>
+    </form>
+    <div id="result"></div>
+    </div>
+    </div>
+    <script src="public/script.js"></script>
+</body>
+</html>
